@@ -1,0 +1,17 @@
+{
+    "contents" : "#include <Rcpp.h>\nusing namespace Rcpp;\n\n//' @title mode\n//' @description Function mode determine the most frequently occurring value in an integer\n//' vector \n//' @param an integer vector\n//' @return the most frequently occurring value\n//' @export\n// [[Rcpp::export]]\n\nint mode(IntegerVector x) {\nint n=unique(x).size();\nNumericVector y(n);\nfor (int i=0; i<n; ++i)\ny[i]=std::count(x.begin(),x.end(),unique(x)[i]);\nint m=max(y);\nint q=std::distance(y.begin(),std::find(y.begin(),y.end(),m));\nreturn unique(x)[q];\n}\n",
+    "created" : 1434975387556.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1933798908",
+    "id" : "E883221B",
+    "lastKnownWriteTime" : 1434975409,
+    "path" : "~/Documents/liber/liber/src/mode.cpp",
+    "project_path" : "src/mode.cpp",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "cpp"
+}

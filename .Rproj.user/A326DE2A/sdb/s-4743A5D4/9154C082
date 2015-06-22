@@ -1,0 +1,16 @@
+{
+    "contents" : "Package: liber\nType: Package\nTitle: Package for Advanced Data Analysis Software Developmnet with R\nVersion: 1.0\nDate: 2015-06-21\nAuthor: Piotr Liberadzki\nMaintainer: Piotr Liberadzki <liber1320@vp.pl>\nDescription: Package contains solution of three tasks from homework 6 of course\nLicense: GPL (>= 2)\nImports:\n    Rcpp\nLinkingTo: Rcpp\nSuggests:\n    testthat,\n    knitr\nVignetteBuilder: knitr\n",
+    "created" : 1434976226127.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1439637219",
+    "id" : "9154C082",
+    "lastKnownWriteTime" : 1434976396,
+    "path" : "~/Documents/liber/liber/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "dcf"
+}

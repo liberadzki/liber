@@ -1,0 +1,46 @@
+---
+title: "liber package benchmark results"
+author: "Piotr Liberadzki"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+**Microbenchmrark results for mode() function**
+
+Let us compare the mode() function with R solution:
+
+```{r,echo=T,warning=FALSE,error=FALSE,message=FALSE}
+mode1<-function (x)
+  which.max(table(x))
+mode1(c(1,21,21,21,5,6,6,7))
+
+```
+
+```{r,echo=TRUE,warning=FALSE,error=FALSE,message=FALSE}
+library(microbenchmark)
+library(liber)
+```
+
+```{r,echo=T,warning=FALSE,error=FALSE,message=FALSE}
+microbenchmark(mode1(c(1:10,1)),mode(c(1:10,1)),mode1(c(1:100,1)),mode(c(1:100,1)),mode1(c(1:1000,1)),mode(c(1:1000,1)))
+```
+
+**Microbenchmrark results for simplify2array1() function**
+
+Let us compare the simplify2array1() function with simplify2array R function:
+
+```{r,echo=T,warning=FALSE,error=FALSE,message=FALSE}
+x<-list(c(1:10),c(1:10),c(1:10))
+y<-list(c(1:100),c(1:100),c(1:100))
+z<-list(c(1:500),c(1:500),c(1:500))
+microbenchmark(simplify2array1(x),simplify2array(x),simplify2array1(y),simplify2array(y),simplify2array1(z),simplify2array(z))
+```
+
+**Microbenchmrark results for ass() function**
+
+```{r,echo=T,warning=FALSE,error=FALSE,message=FALSE}
+microbenchmark(ass(2),ass(4),ass(6))
+```

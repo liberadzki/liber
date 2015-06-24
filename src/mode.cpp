@@ -2,10 +2,12 @@
 using namespace Rcpp;
 
 //' @title mode
-//' @description Function mode determine the most frequently occurring value in an integer
+//' @description function mode determine the most frequently occurring value in an integer
 //' vector 
-//' @param an integer vector
+//'
+//' @param  x - integer vector 
 //' @return the most frequently occurring value
+//'
 //' @export
 // [[Rcpp::export]]
 

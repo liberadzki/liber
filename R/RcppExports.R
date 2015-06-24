@@ -4,11 +4,10 @@
 #' @title ass
 #' @description function ass()  for some given integer n generates all possible 0-1 assignment
 #' vectors of 2n survey participants in such a way that exactly n of them are assigned to group 0 (control)
-#' and the other n ones are assigned to group 1 (treatment). 
+#' and the other n ones are assigned to group 1 (treatment) 
 #'
-#' @param integer n
-#' @return a matrix with 2n columns and an appropriate number of rows
-#'
+#' @param n - integer parameter
+#' @return p -  matrix with 2n columns and an appropriate number of rows
 #'
 #' @export
 ass <- function(n) {
@@ -16,10 +15,12 @@ ass <- function(n) {
 }
 
 #' @title mode
-#' @description Function mode determine the most frequently occurring value in an integer
+#' @description function mode determine the most frequently occurring value in an integer
 #' vector 
-#' @param an integer vector
+#'
+#' @param  x - integer vector 
 #' @return the most frequently occurring value
+#'
 #' @export
 mode <- function(x) {
     .Call('liber_mode', PACKAGE = 'liber', x)
@@ -29,8 +30,10 @@ mode <- function(x) {
 #' @description Function simplify2array1 mimic the behaviour of simplify2array R function
 #' if the dimensions of input numeric vectors from list are equal function transforms vectors into
 #' one numeric matrix. Otherwise function throws an error. 
-#' @param list of numeric vector
-#' @return a numeric matrix 
+#'
+#' @param x - list of numeric vector
+#' @return out - numeric matrix 
+#' 
 #' @export
 simplify2array1 <- function(x) {
     .Call('liber_simplify2array1', PACKAGE = 'liber', x)

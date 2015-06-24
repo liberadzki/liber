@@ -7,13 +7,13 @@
 mode(x)
 }
 \arguments{
-\item{an}{integer vector}
+\item{x}{- integer vector}
 }
 \value{
 the most frequently occurring value
 }
 \description{
-Function mode determine the most frequently occurring value in an integer
+function mode determine the most frequently occurring value in an integer
 vector
 }
 

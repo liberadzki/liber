@@ -5,8 +5,10 @@ using namespace Rcpp;
 //' @description Function simplify2array1 mimic the behaviour of simplify2array R function
 //' if the dimensions of input numeric vectors from list are equal function transforms vectors into
 //' one numeric matrix. Otherwise function throws an error. 
-//' @param list of numeric vector
-//' @return a numeric matrix 
+//'
+//' @param x - list of numeric vector
+//' @return out - numeric matrix 
+//' 
 //' @export
 // [[Rcpp::export]]
 

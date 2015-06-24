@@ -4,11 +4,10 @@ using namespace Rcpp;
 //' @title ass
 //' @description function ass()  for some given integer n generates all possible 0-1 assignment
 //' vectors of 2n survey participants in such a way that exactly n of them are assigned to group 0 (control)
-//' and the other n ones are assigned to group 1 (treatment). 
+//' and the other n ones are assigned to group 1 (treatment) 
 //'
-//' @param integer n
-//' @return a matrix with 2n columns and an appropriate number of rows
-//'
+//' @param n - integer parameter
+//' @return p -  matrix with 2n columns and an appropriate number of rows
 //'
 //' @export
 // [[Rcpp::export]]

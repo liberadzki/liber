@@ -7,10 +7,10 @@
 simplify2array1(x)
 }
 \arguments{
-\item{list}{of numeric vector}
+\item{x}{- list of numeric vector}
 }
 \value{
-a numeric matrix
+out - numeric matrix
 }
 \description{
 Function simplify2array1 mimic the behaviour of simplify2array R function

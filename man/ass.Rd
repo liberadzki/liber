@@ -7,14 +7,14 @@
 ass(n)
 }
 \arguments{
-\item{integer}{n}
+\item{n}{- integer parameter}
 }
 \value{
-a matrix with 2n columns and an appropriate number of rows
+p -  matrix with 2n columns and an appropriate number of rows
 }
 \description{
 function ass()  for some given integer n generates all possible 0-1 assignment
 vectors of 2n survey participants in such a way that exactly n of them are assigned to group 0 (control)
-and the other n ones are assigned to group 1 (treatment).
+and the other n ones are assigned to group 1 (treatment)
 }
 

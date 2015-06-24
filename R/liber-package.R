@@ -8,4 +8,4 @@
 #' @name liber−package
 #' @docType package
 #' @importFrom Rcpp sourceCpp
-invisible ( NULL )
+invisible(NULL)

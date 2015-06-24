@@ -3,7 +3,7 @@ title: "liber package benchmark results"
 author: "Piotr Liberadzki"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{benchmark results}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
